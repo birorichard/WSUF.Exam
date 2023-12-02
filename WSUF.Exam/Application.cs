@@ -9,10 +9,18 @@
             _solarSystemService = solarSystemService;
         }
 
+        /// <summary>
+        /// Call the SolarSystemService's methods from here
+        /// </summary>
         public void Run() 
         {
-            // Call the SolarSystemService's methods from here
             _solarSystemService.WriteAllBodiesNameToConsole();
+
+            Console.WriteLine("\n");
+            Console.WriteLine("Bolygók gravitációs ereje:\n");
+
+            _solarSystemService.WriteGravityToConsole();
+
         }
     }
 }
